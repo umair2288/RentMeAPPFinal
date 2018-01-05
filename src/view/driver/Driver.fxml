@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="631.0" prefWidth="909.0" style="-fx-background-color: #F0F3F3;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DriverController">
+    <top>
+        <VBox BorderPane.alignment="CENTER">
+            <children>
+                <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" prefHeight="111.0" prefWidth="936.0" style="-fx-background-color: #022840;" text="DRIVERS" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="48.0" />
+                    </font>
+                    <padding>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                    </padding>
+                </Label>
+            </children>
+        </VBox>
+    </top>
+    <center>
+        <TableView fx:id="table" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <columns>
+                <TableColumn fx:id="driverID" prefWidth="168.33333587646484" text="Driver ID" />
+                <TableColumn fx:id="name" prefWidth="195.0" text="Name" />
+                <TableColumn fx:id="licenceNo" prefWidth="189.0" text="Licence No" />
+                <TableColumn fx:id="contact" prefWidth="148.6666259765625" text="Contact No" />
+                <TableColumn fx:id="availability" prefWidth="214.66668701171875" text="Availability" />
+            </columns>
+        </TableView>
+    </center>
+    <bottom>
+        <VBox prefHeight="64.0" prefWidth="909.0" BorderPane.alignment="CENTER">
+            <children>
+                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <Button mnemonicParsing="false" prefHeight="44.0" prefWidth="203.0" style="-fx-background-color: #0377C2;" text="Make Available" textFill="WHITE">
+                            <HBox.margin>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                            </HBox.margin>
+                        </Button>
+                        <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="203.0" style="-fx-background-color: #022840;" text="Make Unavailable" textFill="WHITE">
+                            <HBox.margin>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                            </HBox.margin>
+                        </Button>
+                        <Button layoutX="213.0" layoutY="10.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="203.0" style="-fx-background-color: #0377C2;" text="View details" textFill="WHITE">
+                            <HBox.margin>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                            </HBox.margin>
+                        </Button>
+                    </children>
+                    <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </padding>
+                </HBox>
+            </children>
+        </VBox>
+    </bottom>
+</BorderPane>
